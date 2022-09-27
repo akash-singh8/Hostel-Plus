@@ -1,0 +1,101 @@
+
+#complaintSection{
+    align-items: center;
+    background-color: rgba(122, 122, 122, 0.28);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 12%;
+    margin-top: 2%;
+    width: 80%;
+}
+
+@media screen and (max-width: 700px){
+    #complaintSection{
+        margin: 20px 2%;
+        width: 96%;
+    }
+}
+
+#insideComplaint{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#insideComplaint img{
+    width: 24px;
+    margin: 4px 6px 0 2px;
+}
+
+#insideComplaint:hover{
+    color: rgb(202, 202, 202);
+}
+
+#complaintContainer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 70%;
+}
+
+#infos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.floorRoom{
+    width: 80px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    letter-spacing: 0.07em;
+    padding: 10px 15px;
+}
+
+
+
+#complaintMsg{
+    letter-spacing: 0.05em;
+    padding: 12px 20px;
+    height: 40%;
+    width: calc(100% - 40px);
+}
+
+.complaintInput{
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(122, 122, 122, 0.4);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+.category{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 0 12px;
+    letter-spacing: 0.8px;
+}
+
+
+.category option{
+    background-color: rgb(42, 42, 42) ;
+    cursor: pointer;
+}
+
+#complaintQuery{
+    color: rgb(182, 182, 182);
+    font-size: 0.9em;
+    margin-top: 8px;
+}
+
+#sendComplaint{
+    padding: 8px 25px;
+}

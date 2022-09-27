@@ -1,0 +1,98 @@
+
+.generalHead{
+    margin-left: 7%;
+    user-select: none;
+}
+
+#hangoutSection{
+    background-color: rgba(122, 122, 122, 0.28);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 2%;
+    overflow: auto;
+    padding-top: 2px;
+    width: 80%;
+}
+
+
+#allMessages{
+    overflow: auto;
+}
+
+
+#writeMessage{
+    align-items: center;
+    background-color: rgba(122, 122, 122, 0.1);
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    position: sticky;
+    bottom: 0;
+}
+
+#currMessage{
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(122, 122, 122, 0.404);
+    color: rgb(235, 235, 235);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    min-width: 400px;
+    padding: 10px 28px;
+    width: 62%;
+    outline: none;
+}
+
+#writeMessage button{
+    background: transparent;
+    border: none;
+}
+
+#sendMessage{
+    cursor: pointer;
+    margin-left: 8px;
+    transition: transform 0.2s;
+}
+
+#sendMessage:hover{
+    transform: translateX(2px);
+}
+
+#sendMessage:active{
+    transform: translateX(4px);
+}
+
+::placeholder{
+    color: rgb(182, 182, 182);
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .generalHead{
+        margin-left: 3%;
+    }
+    #hangoutSection{
+        margin: 10px 2%;
+        width: 95%;
+    }
+
+    #writeMessage{
+        padding: 8px ;
+    }
+
+    #currMessage{
+        min-width: 200px;
+        width: 80%;
+    }
+}
